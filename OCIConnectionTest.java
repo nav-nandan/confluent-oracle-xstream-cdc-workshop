@@ -10,7 +10,7 @@ public class OCIConnectionTest {
         // --- Configuration ---
         // String url = "jdbc:oracle:oci:@PDB1ORCL";
         // Below url format is preferred as Oracle XStream CDC Source Connector seems to use this to establish connection
-        String url = "jdbc:oracle:oci:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=oracle19c)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=ORCLPDB1)(SERVER=dedicated)))";
+        String url = "jdbc:oracle:oci:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=oracle19c)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=ORCLCDB)(SERVER=dedicated)))";
 
         String user = "C##CFLTUSER"; // Replace with your database username
         String password = "password"; // Replace with your database password
