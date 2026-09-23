@@ -1,12 +1,12 @@
-# psa-oracle-xstream-cdc-workshop
+# confluent-oracle-xstream-cdc-workshop
 Docker rig to test Oracle XStream CDC Source Connector to Oracle 19c
 
 ## Prepare Working Directory
 
 ```
-git clone https://github.com/nav-nandan/psa-oracle-xstream-cdc-workshop.git
+git clone https://github.com/nav-nandan/confluent-oracle-xstream-cdc-workshop.git
 
-cd psa-oracle-xstream-cdc-workshop
+cd confluent-oracle-xstream-cdc-workshop
 ```
 
 Create an account on Oracle Container Registry (OCR) - https://container-registry.oracle.com/ and accept Oracle Standard Terms and Restrictions for `enterprise` repository to use Oracle Database Enterprise Edition images.
