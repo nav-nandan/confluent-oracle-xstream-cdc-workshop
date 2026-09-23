@@ -128,6 +128,23 @@ BEGIN
 END;
 ```
 
+Test OCI Driver Connection
+```
+docker cp OCIConnectionTest.java connect:/opt/oracle
+Successfully copied 4.61kB to connect:/opt/oracle
+
+docker exec -it connect bash
+
+[appuser@connect oracle]$ javac -cp /usr/share/connectors/confluentinc-kafka-connect-oracle-xstream-cdc-source-1.1.0/lib/ojdbc8.jar OCIConnectionTest.java
+[appuser@connect oracle]$ java -cp /usr/share/connectors/confluentinc-kafka-connect-oracle-xstream-cdc-source-1.1.0/lib/ojdbc8.jar: OCIConnectionTest
+Oracle JDBC Driver Registered!
+Attempting to connect to database...
+Connection successful!
+ID: 1
+Value: abc
+Connection closed.
+```
+
 Deploy Oracle XStream CDC Source Connector via the Kafka Connect REST endpoint
 ```
 curl -X POST http://localhost:8083/connectors \
